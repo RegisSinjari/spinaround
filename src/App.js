@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Box from './box';
+import './customtest.css';
+import { Canvas, useFrame } from '@react-three/fiber'
+import Search from './array';
+import Parent from './parent';
+import 'semantic-ui-css/semantic.min.css';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Search />
+      <Parent />
+      
     </div>
   );
 }
